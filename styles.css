@@ -1,0 +1,172 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.nav-body {
+   max-width: 100%;
+   width: 980px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    display: inline-block;
+    float: left;
+}
+
+.search-bar {
+    display: inline-block;
+    width: 40%;
+    float: right;
+}
+
+/*
+carousel
+*/
+.jumbotron {
+    display: block;
+    background-color: #232F3E;
+}
+.carousel img {
+    display: block;
+    width: 580px;
+    height: 420px;
+    margin: 0 auto;
+}
+
+
+
+/*
+================
+CARD BODY RENDER
+================
+*/
+
+.card-body {
+    width: 70%;
+    margin: 0;
+    float: left;
+
+}
+
+.card {
+    margin: 0;
+    width: 25%;
+}
+
+.card img {
+    
+    height:220px;
+}
+
+button {
+    border-width: 0px;
+}
+
+.card-group {
+    margin-top: 30px;
+}
+
+.card-footer {
+    background-color: #FF9900;
+}
+.card-footer:hover {
+    background-color: #FFBF5E;
+}
+
+.text {
+    color: white;
+    font-size: 18px;
+}
+
+.cart-body {
+    display: none;
+    width: 30%;
+    height: 300px;
+   
+    float: right;
+    margin-top: 50px;
+}
+
+.shopping-cart-title {
+    width: 100%;
+    height: 40px;
+    background-color:#232F3E;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+li {
+    display: block;
+    width: 100%;
+    float: left;
+    list-style-type: none;
+    padding: 15px;
+    border-bottom: 2px solid  #D3D3D3;
+}
+
+li img {
+    float: right;
+}
+
+li .span-price {
+    float: right;
+    padding: 20px;
+}
+
+/*
+media queries
+*/
+
+@media screen and (max-width: 736px) {
+
+    body {
+        width: 100%;
+    }
+    .nav-body {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .nav-link {
+        display: none;
+    }
+    .search-bar {
+        display: block;
+        width: 80%;
+    }
+
+    .jumbotron {
+        display: none;
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    .card-body {
+        width: 100%;
+        margin: 0;
+        float: left;
+    
+    }
+    .card {
+        margin: 0;
+        width: 100%;
+    }
+    
+    .card img {
+        width: 100%;
+        
+    }
+    
+.cart-body {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+}
+

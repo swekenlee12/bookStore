@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Childeren | Book Store</title>
+  </head>
+  <body>
+    <!-- As a heading -->
+    <nav class="navbar navbar-light bg-light">
+        <div class="nav-body">
+             <span class="navbar-brand">Children | BookStore</span>
+        </div>
+    </nav>
+    <nav class="navbar navbar-light bg-light">
+        <span class="navbar-brand"></span>
+            <div class="nav-body">
+
+                <span class="nav-link">New Release</span>
+                <span class="nav-link">Book under $1.00</span>
+                <span class="nav-link">Book under $5.00</span>
+                <span class="nav-link">Book under $10.00</span>
+
+                <form class="form-inline">
+                    <input class="form-control search-bar" type="search" placeholder="Search" aria-label="Search">
+                     <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+         </nav> <!-- The End of the second navbar built-->
+
+    <!--
+        ======================
+        DISPLAY SPECIAL OFFERS
+        ======================
+    -->
+  
+        <div class="jumbotron jumbotron-fluid">
+            <!-- Carousel Start Here-->
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/61K4070qgwL._SY498_BO1,204,203,200_.jpg" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51CMAtVffRL._SY498_BO1,204,203,200_.jpg" class="d-block" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51Xmn5gL9OL._SY498_BO1,204,203,200_.jpg" class="d-block" alt="...">
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+        </div><!-- Jumbotron end here-->
+
+        <!--
+            ======================
+            Book Cards Render Here
+            ======================
+        -->
+       
+        <div class="card-body">
+                    <div class="card-group">
+                        <div class="card">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51iHM-M+ADL._AC_SX368_.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">If Animanls Kissed Good Night</h5>
+                            <p class="card-text">Ann Whitford Paul, David Walker</p>
+                            <p class="card-text">$4.79</p>
+                        </div>
+                        <button type="button" class="card-footer" data-title="If Animanls Kissed Good Night" data-price="4.79" onclick="dataBook(this)">
+                            <small class="text">Add to Cart</small>
+                        </button>
+                        </div>
+                        <div class="card">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/61dutbUvPmL._AC_SX368_.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">I've Loved You Since Forever</h5>
+                            <p class="card-text">Hoda Kotb, Suzie Mason</p>
+                            <p class="card-text">$4.49</p>
+                        </div>
+                        <button class="card-footer" type="button" data-title="I've Loved You Since Forever" data-price="4.49" onclick="dataBook(this)">
+                            <small class="text">Add to Cart</small>
+                        </button>
+                        </div>
+                        <div class="card">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51wOnGlAcEL._AC_SX368_.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Be You!</h5>
+                            <p class="card-text">Peter H. Reynolds</p>
+                            <p class="card-text">$12.79</p>
+                        </div>
+                        <button class="card-footer" data-title="Be You!" data-price="12.79" onclick="dataBook(this)">
+                            <small class="text">Add to Cart</small>
+                        </button>
+                        </div>
+                    </div>
+                    <!-- 2nd Row of Books -->
+                    <div class="card-group">
+                        <div class="card">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/61XNi5f0XUL._AC_SX368_.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Play Outside!</h5>
+                            <p class="card-text">Laurent Moreau</p>
+                            <p class="card-text">$15.29</p>
+                        </div>
+                        <button class="card-footer" data-title="Play Outside!" data-price="15.29" onclick="dataBook(this)">
+                            <small class="text">Add to Cart</small>
+                        </button>
+                        </div>
+                        <div class="card">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51XQSI-ADVL._AC_SX368_.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tomorrow I'll Be Kind</h5>
+                            <p class="card-text">Jessica Hische</p>
+                            <p class="card-text">$12.79</p>
+                        </div>
+                        <button class="card-footer" data-title="Tomorrow I'll Be Kind" data-price="12.79" onclick="dataBook(this)">
+                            <small class="text">Add to Cart</small>
+                        </button>
+                        </div>
+                        <div class="card">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/41sx1M5o6EL._AC_SX368_.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cat Dog Dog</h5>
+                            <p class="card-text">Nelly Bucchet</p>
+                            <p class="card-text">$17.99</p>
+                        </div>
+                        <button class="card-footer" data-title="Cat Dog Dog" data-price="17.99" onclick="dataBook(this)">
+                            <small class="text" >Add to Cart</small>
+                        </button>
+                        </div>
+                    </div>
+                     <!-- 3nd Row of Books -->
+                     <div class="card-group">
+                        <div class="card">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51Rx8Y458kL._AC_SX368_.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The Paper Kingdom</h5>
+                            <p class="card-text">Helena Ku Rhee</p>
+                            <p class="card-text">$12.79</p>
+                        </div>
+                        <button class="card-footer" data-title="The Paper Kingdom" data-price="12.79" onclick="dataBook(this)">
+                            <small class="text">Add to Cart</small>
+                        </button>
+                        </div>
+                        <div class="card">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/41OLZSeUpeL._AC_SX368_.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Jules vs. the Ocean</h5>
+                            <p class="card-text">Jessie Sima</p>
+                            <p class="card-text">$14.34</p>
+                        </div>
+                        <button class="card-footer" data-title="Jules vs. the Ocean" data-price="14.34" onclick="dataBook(this)">
+                            <small class="text">Add to Cart</small>
+                        </button>
+                        </div>
+                        <div class="card">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51OPvq96eUL._AC_SX368_.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Llama Unleashes the Alpacalypse</h5>
+                            <p class="card-text">Jonathan Stutzman</p>
+                            <p class="card-text">$13.49</p>
+                        </div>
+                        <button class="card-footer" data-title="Llama Unleashes the Alpacalypse" data-price="13.49" onclick="dataBook(this)">
+                            <small class="text">Add to Cart</small>
+                        </button>
+                        </div>
+                    </div>
+                    <!-- 4nd Row of Books -->
+                    <div class="card-group">
+                        <div class="card">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/510SQoPUeLL._AC_SX368_.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Waiting for Chicken Smith</h5>
+                            <p class="card-text">David Mackintosh</p>
+                            <p class="card-text">$11.99</p>
+                        </div>
+                        <button class="card-footer">
+                            <small  class="text" data-title="Waiting for Chicken Smith" data-price="11.99" onclick="dataBook(this)">Add to Cart</small>
+                        </button>
+                        </div>
+                        <div class="card">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51f0kfm01EL._AC_SX368_.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The Neighbors</h5>
+                            <p class="card-text">Einat Tsarfati</p>
+                            <p class="card-text">$12.99</p>
+                        </div>
+                        <button class="card-footer" data-title="The Neighbors" data-price="12.99" onclick="dataBook(this)">
+                            <small class="text">Add to Cart</small>
+                        </button>
+                        </div>
+                        <div class="card">
+                        <img src="https://images-na.ssl-images-amazon.com/images/I/51XCMbISVkL._AC_SX368_.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">The Good Egg</h5>
+                            <p class="card-text">Jory John</p>
+                            <p class="card-text">$16.99</p>
+                        </div>
+                        <button class="card-footer" data-title="The Good Egg" data-price="16.99" onclick="dataBook(this)">
+                            <small class="text">Add to Cart</small>
+                        </button>
+                        </div>
+                    </div>
+
+
+        </div><!-- card-body end here-->
+
+        <ul class="cart-body">
+            <div class="shopping-cart-title">Book Cart</div>
+        </ul>
+
+
+        <div class="footer">
+        </div>
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
